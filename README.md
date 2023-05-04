@@ -32,10 +32,10 @@
 - [📝 License](#license)
 
 
-# 📖 [Book-Store] <a name="about-project"></a>
+# 📖 [React-Book-Store] <a name="about-project"></a>
 
 
-**[Book Store]** 
+**[React Book Store]** 
 -This project is Book store for entering and storing books in an application
 
 ## 🛠 Built With <a name="built-with"></a>
