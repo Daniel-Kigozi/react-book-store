@@ -1,15 +1,22 @@
-const checkBookStatus = 'Bookstore/categories/checkStatus';
+import { createSlice } from '@reduxjs/toolkit';
 
-const checkStatus = () => ({
-  type: checkBookStatus,
-});
-
-const categoryReducer = (state = [], action) => {
-  if (action.type === checkBookStatus) {
-    return 'Under construction';
-  }
-  return state;
+const initialState = {
+  categories: [],
 };
 
-export default categoryReducer;
-export { checkStatus };
+const categorySlice = createSlice({
+  name: 'category',
+  initialState,
+  reducers: {
+    addCategory: (state, action) => {
+      if (state.categories.push(action.payload) === 'Under construction') {
+        return 'Under construction';
+      }
+      return state;
+    },
+
+  },
+});
+
+export const { addCategory } = categorySlice.actions;
+export default categorySlice.reducer;
