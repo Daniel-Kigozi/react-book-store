@@ -29,7 +29,6 @@ const bookSlice = createSlice({
         id: action.payload.item_id,
         title: action.payload.title,
         author: action.payload.author,
-        category: action.payload.category,
       };
       state.push(newBook);
     },
